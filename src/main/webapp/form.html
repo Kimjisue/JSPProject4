@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form" action="form_ok.jsp" method="post" >
+  이름 : <input type="text" name="name"><br>
+  학번 : <input type="text" name="id"><br>
+  전공 : <input type="text" name="Major"><br>
+  나이 : <input type="text" name="age"><br>
+  생일 : <input type="date" id="birthday" name="birthday">
+
+  <p>좋아하는 색깔은?</p>
+  <select name="color">
+    <option value="blue">파랑</option>
+    <option value="red">빨강</option>
+    <option value="orange">주황</option>
+    <option value="purple">보라</option>
+    <option value="etc">기타</option>
+  </select>
+
+  <p>현재 수강하는 과목은?</p>
+  <input type="radio" name="lecture" value="Data Structure" checked> Data Structure <br>
+  <input type="radio" name="lecture" value="Computer Architecture"> Computer Architecture <br>
+  <input type="radio" name="lecture" value="java"> JAVA <br>
+  <input type="radio" name="lecture" value="c"> C <br>
+
+  <p>취미를 모두 골라주세요</p>
+  <input type="radio" name="hobby" value="netflix" checked> 넷플릭스 시청 <br>
+  <input type="radio" name="hobby" value="music"> 음악 감상 <br>
+  <input type="radio" name="hobby" value="youtube"> 유튜브 시청 <br>
+  <input type="radio" name="hobby" value="book" > 책 읽기 <br>
+
+  <p>좋아하는 영화 장르를 골라주세요</p>
+  <select name="movie">
+    <option value="action"> 액션
+    <option value="horror"> 호러
+    <option value="romance" selected> 로맨스
+    <option value="comedy"> 코미디
+  </select>
+
+  <p>하고 싶은 말 </p>
+  <textarea name="message" rows="5" cols="30">
+    여기에 적으세요.
+    </textarea><br>
+
+  <input type="submit" value="저장">
+  </form>
+
+</body>
+</html>
